@@ -113,3 +113,60 @@ print(customer["address"]["country"])
 order = {"id": 5001, "customer": {"name": "Alice"}}
 
 print(order.get("customer", {}).get("address", {}).get("city", "not found"))
+
+
+import copy
+
+original = {"customer": {"name": "Alice", "age": 25}}
+
+new_data = copy.deepcopy(original)
+
+new_data["customer"]["age"] = 40
+
+print(original["customer"]["age"])
+print(new_data["customer"]["age"])
+
+#
+numbers = [1, 2, 3, 4, 5]
+
+result = {n: n * 10 for n in numbers if n > 2}
+
+print(result)
+
+# {3: 30, 4: 40, 5: 50}
+
+name = "Alice"
+
+print(hash(name))
+
+#
+
+data = [("Alice", 25), ("Bob", 30), ("Alice", 25), ("Charlie", 35)]
+
+unique = set(data)
+
+result = {name: age for name, age in unique}
+
+print(len(data))
+print(len(unique))
+print(result)
+
+# 4
+# 3
+# {alice: 25, bob:30, charlie:35}
+
+print(2 % 2 == 0)
+
+print(bool(""))
+print(bool("Alice"))
+print(bool([]))
+print(bool([1, 2]))
+print(bool(0))
+print(bool(10))
+
+# False
+# True
+# False
+# True
+# False
+# True

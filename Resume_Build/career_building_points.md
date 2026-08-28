@@ -1,0 +1,1 @@
+Senior Data Processing / Data Engineering candidate with 5 years of professional experience in market research data processing, transitioning into modern Data Engineering with hands-on Python, SQL, PostgreSQL, PySpark, Airflow, Docker and AWS.
